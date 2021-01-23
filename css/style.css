@@ -1,0 +1,251 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Exo', sans-serif;
+}
+
+header{
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0,0,0,1);
+	height: 92px;
+
+}
+.topnav{
+	width:1300px;
+	max-width:90%;
+	margin:0 auto;
+}
+
+.logo-container-1{
+    float: left;
+}
+
+.logo-container-2{
+    padding: 15px 0px;
+}
+
+.logo-container-2 img{
+    height:58px;
+    object-fit:cover;
+}
+
+.nav-content-1{
+    position:absolute;
+    right:0;
+    width: auto;
+    height: 92px;
+    display:flex;
+}
+.nav-content-2{
+    display:inline-block;
+}
+.nav-content-3 a{
+	font-family: "Source Sans Pro", sans-serif;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+    padding: 35px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    position: relative;
+    display:inline-block;
+}
+
+.login-container-1 {
+	margin-left: 35px;
+    margin-right:20px;
+    margin-top:20px;
+}
+
+.login-container-2{
+    display: inline-block;
+	background: #f56f46 none repeat scroll 0 0;
+    border: medium;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: auto;
+    padding: 7px 30px;
+	width: auto;
+	margin-right:10px;
+}
+
+.login-container-2 a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 30px;
+	font-family: "Source Sans Pro", sans-serif;
+}
+.login-container-1 .login-container-icon{
+	display: none;
+	cursor: pointer;
+}
+.login-container-3{
+	display: none;
+}
+
+main {
+	margin-top: 95px;
+}
+
+.home-intro{
+	font-family: "source sans pro",sans-serif;
+	width: auto;
+	padding: 90px 0 160px;
+	background-image:url(/images/01.jpg);
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	text-align: center;
+}
+
+.home-intro h1{
+	font-size: 50px;
+    line-height: 45px;
+	margin: 0 auto 30px;
+	font-weight: 900;
+	color: #fff;
+}
+.home-intro h1 span{
+	color: #f56f46
+}
+
+.under-development{
+	font-family: "source sans pro",sans-serif;
+	width: auto;
+	padding: 90px 0 160px;
+	text-align: center;
+}
+
+.under-development h1 {
+	font-size: 50px;
+    line-height: 45px;
+	margin: 0 auto 30px;
+	font-weight: 900;
+}
+
+.under-development h2{
+	font-size: 42px;
+    line-height: 45px;
+	margin: 0 auto 30px;
+	font-weight: 900;
+	color: #f56f46
+}
+
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 8999;
+	top: 0;
+	left: 0;
+	background-color: white;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 10px;
+}
+
+.sidenav a {
+	color: #19191b;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 15px 0px 15px 15px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+	position: relative;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+.sidenav-overlay {
+	position: fixed;
+	display: none;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 7999
+}
+
+.sidenav a:hover {
+	color: #f56f46;
+}
+
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+@media (max-width:992px){
+	header{
+		height: 57px;
+
+	}
+	.logo-container-2 img{
+		width: 150px;
+		height: auto;
+	}
+	.nav-content-2{
+		display: none;
+	}
+	.login-container-1 .login-container-icon{
+		float: right;
+		display: block;
+		cursor: pointer;
+		margin-top: 8px;
+	}
+	.login-container-1 .login-container-icon div.icon {
+		width: 20px;
+		height: 3px;
+		background-color: black;
+		margin: 3px 0;
+
+	}
+	.login-container-1{
+		margin-top: 10px;
+	}
+	.login-container-2{
+		display: none;
+	}
+	.login-container-3{
+		display: inline-block;
+		background: #f56f46 none repeat scroll 0 0;
+		border: medium;
+		border-radius: 4px;
+		cursor: pointer;
+		margin: auto;
+		padding: 4px 17px;
+		width: auto;
+		margin-right:10px;
+	}
+	.login-container-3 a{
+		text-decoration: none;
+		color: #fff;
+		font-size: 15px;
+		font-weight: 600;
+		line-height: 30px;
+		font-family: "Source Sans Pro", sans-serif;
+	}
+	main {
+		margin-top: 55px;
+	}
+
+	.home-intro h1{
+		font-size: 42px;
+	}
+	
+}
+
